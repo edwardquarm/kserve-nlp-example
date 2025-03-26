@@ -1,0 +1,4 @@
+transformers
+optimum
+torch
+torch-model-archiver
