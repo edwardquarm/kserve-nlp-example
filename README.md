@@ -52,22 +52,24 @@ This will create the required files in the `Transformer_model` directory.
 #### Directory Structure
 Organize your files as follows:
 ```
-├── Huggingface_Transformers
-│   ├── Download_Transformer_models.py
-│   ├── Transformer_handler_generalized.py
-│   ├── Transformer_model
-│       ├── model.safetensors
-│       ├── config.json
-│   ├── text_classification_artifacts
-│       ├── index_to_name.json
-│       ├── sample1.txt
+├── Download_Transformer_models.py       # Script to download the tokenizer and model
+├── Transformer_handler_generalized.py   # Custom handler for TorchServe
+├── Transformer_model                    # Directory containing the downloaded model files
+│   ├── model.safetensors                # Serialized model file
+│   ├── config.json                      # Model configuration file
+├── text_classification_artifacts        # Artifacts for text classification
+│   ├── index_to_name.json               # Maps predictions to labels
+│   ├── sample1.txt                      # Sample input text for inference
 ├── config
-│   ├── config.properties
+│   ├── config.properties                # TorchServe configuration settings
 ├── model-store
-│   ├── text_classification.mar
+│   ├── text_classification.mar          # Model archive file created using torch-model-archiver
 ```
 
-- **`Huggingface_Transformers/`**: Contains scripts and artifacts for downloading and handling the model.
+- **`Download_Transformer_models.py`**: Script to download the tokenizer and model.
+- **`Transformer_handler_generalized.py`**: Custom handler for TorchServe.
+- **`Transformer_model/`**: Directory containing the downloaded model files.
+- **`text_classification_artifacts/`**: Artifacts for text classification.
 - **`config/`**: Contains TorchServe configuration settings.
 - **`model-store/`**: Contains the `.mar` file created using `torch-model-archiver`.
 
