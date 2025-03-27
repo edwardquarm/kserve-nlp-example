@@ -1,0 +1,4 @@
+{
+  "text": "The book was a thrilling read, I couldn't put it down.",
+  "target": 1
+}

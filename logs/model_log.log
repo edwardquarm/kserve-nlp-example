@@ -1,0 +1,304 @@
+2025-03-27T14:31:29,183 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=170654
+2025-03-27T14:31:29,183 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-03-27T14:31:29,188 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Successfully loaded /home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2025-03-27T14:31:29,188 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - [PID]170654
+2025-03-27T14:31:29,188 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Torch worker started.
+2025-03-27T14:31:29,188 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Python runtime: 3.10.16
+2025-03-27T14:31:29,196 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-03-27T14:31:29,215 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - model_name: my_tc, batchSize: 1
+2025-03-27T14:31:30,488 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-03-27T14:31:30,501 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - ONNX enabled
+2025-03-27T14:31:30,501 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-03-27T14:31:30,501 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Transformers version 4.50.2
+2025-03-27T14:31:31,735 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Compiled model with backend inductor, mode reduce-overhead
+2025-03-27T14:31:31,735 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Transformer model from path /tmp/models/ea212bd2c3c2427c81ddf387029bf29f loaded successfully
+2025-03-27T14:32:35,424 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Backend received inference at: 1743100355
+2025-03-27T14:32:35,424 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Received text: 'Bloomberg has decided to publish a new report on the global economy.'
+2025-03-27T14:32:35,424 [WARN ] W-9000-my_tc_1.0-stderr MODEL_LOG - Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+2025-03-27T14:32:35,424 [WARN ] W-9000-my_tc_1.0-stderr MODEL_LOG - /home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2700: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+2025-03-27T14:32:35,425 [WARN ] W-9000-my_tc_1.0-stderr MODEL_LOG -   warnings.warn(
+2025-03-27T14:32:38,571 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Invoking custom service failed.
+2025-03-27T14:32:38,571 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-03-27T14:32:38,571 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/ts/service.py", line 135, in predict
+2025-03-27T14:32:38,571 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     ret = self._entry_point(input_batch, self.context)
+2025-03-27T14:32:38,571 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/ts/torch_handler/base_handler.py", line 458, in handle
+2025-03-27T14:32:38,571 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     output = self.inference(data_preprocess)
+2025-03-27T14:32:38,571 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+2025-03-27T14:32:38,571 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return func(*args, **kwargs)
+2025-03-27T14:32:38,571 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/tmp/models/ea212bd2c3c2427c81ddf387029bf29f/Transformer_handler_generalized.py", line 244, in inference
+2025-03-27T14:32:38,572 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     predictions = self.model(input_ids_batch, attention_mask_batch)
+2025-03-27T14:32:38,572 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+2025-03-27T14:32:38,572 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return self._call_impl(*args, **kwargs)
+2025-03-27T14:32:38,572 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+2025-03-27T14:32:38,572 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return forward_call(*args, **kwargs)
+2025-03-27T14:32:38,572 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 574, in _fn
+2025-03-27T14:32:38,572 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return fn(*args, **kwargs)
+2025-03-27T14:32:38,572 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+2025-03-27T14:32:38,572 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return self._call_impl(*args, **kwargs)
+2025-03-27T14:32:38,572 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+2025-03-27T14:32:38,572 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return forward_call(*args, **kwargs)
+2025-03-27T14:32:38,572 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 1380, in __call__
+2025-03-27T14:32:38,572 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return self._torchdynamo_orig_callable(
+2025-03-27T14:32:38,572 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 1164, in __call__
+2025-03-27T14:32:38,572 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     result = self._inner_convert(
+2025-03-27T14:32:38,572 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 547, in __call__
+2025-03-27T14:32:38,573 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return _compile(
+2025-03-27T14:32:38,573 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 986, in _compile
+2025-03-27T14:32:38,573 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     guarded_code = compile_inner(code, one_graph, hooks, transform)
+2025-03-27T14:32:38,573 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 715, in compile_inner
+2025-03-27T14:32:38,573 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return _compile_inner(code, one_graph, hooks, transform)
+2025-03-27T14:32:38,573 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_utils_internal.py", line 95, in wrapper_function
+2025-03-27T14:32:38,573 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return function(*args, **kwargs)
+2025-03-27T14:32:38,573 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 750, in _compile_inner
+2025-03-27T14:32:38,573 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     out_code = transform_code_object(code, transform)
+2025-03-27T14:32:38,573 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/bytecode_transformation.py", line 1361, in transform_code_object
+2025-03-27T14:32:38,573 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     transformations(instructions, code_options)
+2025-03-27T14:32:38,573 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 231, in _fn
+2025-03-27T14:32:38,573 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return fn(*args, **kwargs)
+2025-03-27T14:32:38,573 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 662, in transform
+2025-03-27T14:32:38,573 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     tracer.run()
+2025-03-27T14:32:38,574 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 2868, in run
+2025-03-27T14:32:38,574 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     super().run()
+2025-03-27T14:32:38,574 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 1052, in run
+2025-03-27T14:32:38,574 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     while self.step():
+2025-03-27T14:32:38,574 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 962, in step
+2025-03-27T14:32:38,574 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     self.dispatch_table[inst.opcode](self, inst)
+2025-03-27T14:32:38,574 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 3048, in RETURN_VALUE
+2025-03-27T14:32:38,574 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     self._return(inst)
+2025-03-27T14:32:38,574 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 3033, in _return
+2025-03-27T14:32:38,574 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     self.output.compile_subgraph(
+2025-03-27T14:32:38,574 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/output_graph.py", line 1136, in compile_subgraph
+2025-03-27T14:32:38,574 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     self.compile_and_call_fx_graph(
+2025-03-27T14:32:38,574 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/output_graph.py", line 1382, in compile_and_call_fx_graph
+2025-03-27T14:32:38,574 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     compiled_fn = self.call_user_compiler(gm)
+2025-03-27T14:32:38,574 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/output_graph.py", line 1432, in call_user_compiler
+2025-03-27T14:32:38,574 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return self._call_user_compiler(gm)
+2025-03-27T14:32:38,574 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/output_graph.py", line 1483, in _call_user_compiler
+2025-03-27T14:32:38,575 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     raise BackendCompilerFailed(self.compiler_fn, e).with_traceback(
+2025-03-27T14:32:38,575 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/output_graph.py", line 1462, in _call_user_compiler
+2025-03-27T14:32:38,575 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     compiled_fn = compiler_fn(gm, self.example_inputs())
+2025-03-27T14:32:38,575 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/repro/after_dynamo.py", line 130, in __call__
+2025-03-27T14:32:38,575 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     compiled_gm = compiler_fn(gm, example_inputs)
+2025-03-27T14:32:38,575 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/__init__.py", line 2340, in __call__
+2025-03-27T14:32:38,575 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return compile_fx(model_, inputs_, config_patches=self.config)
+2025-03-27T14:32:38,575 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/compile_fx.py", line 1552, in compile_fx
+2025-03-27T14:32:38,575 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return compile_fx(
+2025-03-27T14:32:38,575 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/compile_fx.py", line 1863, in compile_fx
+2025-03-27T14:32:38,575 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return aot_autograd(
+2025-03-27T14:32:38,575 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/backends/common.py", line 83, in __call__
+2025-03-27T14:32:38,575 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     cg = aot_module_simplified(gm, example_inputs, **self.kwargs)
+2025-03-27T14:32:38,575 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 1155, in aot_module_simplified
+2025-03-27T14:32:38,576 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     compiled_fn = dispatch_and_compile()
+2025-03-27T14:32:38,576 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 1131, in dispatch_and_compile
+2025-03-27T14:32:38,576 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     compiled_fn, _ = create_aot_dispatcher_function(
+2025-03-27T14:32:38,576 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 580, in create_aot_dispatcher_function
+2025-03-27T14:32:38,576 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return _create_aot_dispatcher_function(
+2025-03-27T14:32:38,576 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 830, in _create_aot_dispatcher_function
+2025-03-27T14:32:38,576 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     compiled_fn, fw_metadata = compiler_fn(
+2025-03-27T14:32:38,576 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/jit_compile_runtime_wrappers.py", line 203, in aot_dispatch_base
+2025-03-27T14:32:38,576 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     compiled_fw = compiler(fw_module, updated_flat_args)
+2025-03-27T14:32:38,576 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 489, in __call__
+2025-03-27T14:32:38,576 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return self.compiler_fn(gm, example_inputs)
+2025-03-27T14:32:38,576 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/compile_fx.py", line 1741, in fw_compiler_base
+2025-03-27T14:32:38,576 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return inner_compile(
+2025-03-27T14:32:38,576 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/contextlib.py", line 79, in inner
+2025-03-27T14:32:38,576 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return func(*args, **kwds)
+2025-03-27T14:32:38,576 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/compile_fx.py", line 569, in compile_fx_inner
+2025-03-27T14:32:38,576 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return wrap_compiler_debug(_compile_fx_inner, compiler_name="inductor")(
+2025-03-27T14:32:38,577 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_dynamo/repro/after_aot.py", line 102, in debug_wrapper
+2025-03-27T14:32:38,577 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     inner_compiled_fn = compiler_fn(gm, example_inputs)
+2025-03-27T14:32:38,577 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/compile_fx.py", line 685, in _compile_fx_inner
+2025-03-27T14:32:38,577 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     mb_compiled_graph = fx_codegen_and_compile(
+2025-03-27T14:32:38,577 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/compile_fx.py", line 1129, in fx_codegen_and_compile
+2025-03-27T14:32:38,577 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return scheme.codegen_and_compile(gm, example_inputs, inputs_to_check, graph_kwargs)
+2025-03-27T14:32:38,577 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/compile_fx.py", line 1044, in codegen_and_compile
+2025-03-27T14:32:38,577 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     compiled_fn = graph.compile_to_module().call
+2025-03-27T14:32:38,577 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/graph.py", line 2027, in compile_to_module
+2025-03-27T14:32:38,577 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return self._compile_to_module()
+2025-03-27T14:32:38,577 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/graph.py", line 2033, in _compile_to_module
+2025-03-27T14:32:38,577 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     self.codegen_with_cpp_wrapper() if self.cpp_wrapper else self.codegen()
+2025-03-27T14:32:38,577 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/graph.py", line 1968, in codegen
+2025-03-27T14:32:38,577 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     self.scheduler.codegen()
+2025-03-27T14:32:38,577 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/scheduler.py", line 3477, in codegen
+2025-03-27T14:32:38,578 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return self._codegen()
+2025-03-27T14:32:38,578 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/scheduler.py", line 3554, in _codegen
+2025-03-27T14:32:38,578 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     self.get_backend(device).codegen_node(node)
+2025-03-27T14:32:38,578 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/codegen/cpp.py", line 4777, in codegen_node
+2025-03-27T14:32:38,578 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     self.codegen_outer_loop_node(node)
+2025-03-27T14:32:38,578 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/codegen/cpp.py", line 4751, in codegen_outer_loop_node
+2025-03-27T14:32:38,578 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     if not try_outer_loop_fusion_with_local_buf(node):
+2025-03-27T14:32:38,578 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/codegen/cpp.py", line 4726, in try_outer_loop_fusion_with_local_buf
+2025-03-27T14:32:38,578 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     cpp_kernel_proxy = CppKernelProxy(kernel_group)
+2025-03-27T14:32:38,578 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/codegen/cpp.py", line 3632, in __init__
+2025-03-27T14:32:38,578 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     self.picked_vec_isa: cpu_vec_isa.VecISA = cpu_vec_isa.pick_vec_isa()
+2025-03-27T14:32:38,578 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/cpu_vec_isa.py", line 414, in pick_vec_isa
+2025-03-27T14:32:38,578 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     _valid_vec_isa_list: List[VecISA] = valid_vec_isa_list()
+2025-03-27T14:32:38,579 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/cpu_vec_isa.py", line 401, in valid_vec_isa_list
+2025-03-27T14:32:38,579 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     isa_list.extend(
+2025-03-27T14:32:38,579 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/cpu_vec_isa.py", line 401, in <genexpr>
+2025-03-27T14:32:38,579 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     isa_list.extend(
+2025-03-27T14:32:38,579 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/cpu_vec_isa.py", line 142, in __bool__
+2025-03-27T14:32:38,579 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return self.__bool__impl(config.cpp.vec_isa_ok)
+2025-03-27T14:32:38,580 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/cpu_vec_isa.py", line 152, in __bool__impl
+2025-03-27T14:32:38,580 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return self.check_build(VecISA._avx_code)
+2025-03-27T14:32:38,580 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/cpu_vec_isa.py", line 102, in check_build
+2025-03-27T14:32:38,580 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     extra=_get_isa_dry_compile_fingerprint(self._arch_flags),
+2025-03-27T14:32:38,580 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/cpu_vec_isa.py", line 28, in _get_isa_dry_compile_fingerprint
+2025-03-27T14:32:38,580 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     compiler_info = get_compiler_version_info(get_cpp_compiler())
+2025-03-27T14:32:38,580 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/cpp_builder.py", line 152, in get_cpp_compiler
+2025-03-27T14:32:38,580 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     compiler = cpp_compiler_search(search)
+2025-03-27T14:32:38,581 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/torch/_inductor/cpp_builder.py", line 94, in cpp_compiler_search
+2025-03-27T14:32:38,581 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     raise exc.InvalidCxxCompiler
+2025-03-27T14:32:38,581 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - torch._dynamo.exc.BackendCompilerFailed: backend='inductor' raised:
+2025-03-27T14:32:38,581 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - InvalidCxxCompiler: No working C++ compiler found in torch._inductor.config.cpp.cxx: (None, 'g++')
+2025-03-27T14:32:38,581 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - 
+2025-03-27T14:32:38,581 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Set TORCH_LOGS="+dynamo" and TORCHDYNAMO_VERBOSE=1 for more information
+2025-03-27T14:32:38,581 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - 
+2025-03-27T14:32:38,581 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - 
+2025-03-27T14:32:38,581 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - You can suppress this exception and fall back to eager by setting:
+2025-03-27T14:32:38,581 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     import torch._dynamo
+2025-03-27T14:32:38,581 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     torch._dynamo.config.suppress_errors = True
+2025-03-27T14:32:38,581 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - 
+2025-03-27T14:37:48,308 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=172936
+2025-03-27T14:37:48,308 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-03-27T14:37:48,313 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Successfully loaded /home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2025-03-27T14:37:48,313 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - [PID]172936
+2025-03-27T14:37:48,313 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Torch worker started.
+2025-03-27T14:37:48,314 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Python runtime: 3.10.16
+2025-03-27T14:37:48,322 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-03-27T14:37:48,343 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - model_name: my_tc, batchSize: 1
+2025-03-27T14:37:49,674 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-03-27T14:37:49,688 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - ONNX enabled
+2025-03-27T14:37:49,688 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-03-27T14:37:49,688 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Transformers version 4.50.2
+2025-03-27T14:37:50,266 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Transformer model from path /tmp/models/7fc44c8d91f54ffe8754d8e6c14fe2a5 loaded successfully
+2025-03-27T14:38:28,083 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Backend received inference at: 1743100708
+2025-03-27T14:38:28,083 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Received text: 'Bloomberg has decided to publish a new report on the global economy.'
+2025-03-27T14:38:28,083 [WARN ] W-9000-my_tc_1.0-stderr MODEL_LOG - Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+2025-03-27T14:38:28,084 [WARN ] W-9000-my_tc_1.0-stderr MODEL_LOG - /home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2700: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+2025-03-27T14:38:28,084 [WARN ] W-9000-my_tc_1.0-stderr MODEL_LOG -   warnings.warn(
+2025-03-27T14:38:28,235 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - This the output size from the Seq classification model torch.Size([1, 2])
+2025-03-27T14:38:28,235 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - This the output from the Seq classification model SequenceClassifierOutput(loss=None, logits=tensor([[ 0.0504, -0.3743]]), hidden_states=None, attentions=None)
+2025-03-27T14:38:28,236 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Generated text ['Not Accepted']
+2025-03-27T14:38:46,458 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Backend received inference at: 1743100726
+2025-03-27T14:38:46,458 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Received text: 'Bloomberg has decided to publish a new report on the global economy.'
+2025-03-27T14:38:46,460 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Calculating Explanations
+2025-03-27T14:38:46,460 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Getting data and target
+2025-03-27T14:38:46,460 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - text_ids [22950, 2038, 2787, 2000, 10172, 1037, 2047, 3189, 2006, 1996, 3795, 4610, 1012]
+2025-03-27T14:38:46,460 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - [tokenizer.cls_token_id] [101]
+2025-03-27T14:38:46,461 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - input_ids [101, 22950, 2038, 2787, 2000, 10172, 1037, 2047, 3189, 2006, 1996, 3795, 4610, 1012, 102]
+2025-03-27T14:53:57,029 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Backend received inference at: 1743101637
+2025-03-27T14:53:57,030 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Received text: 'The Securities and Exchange Commission is expected to vote Wednesday to prohibit mutual fund companies from funneling stock trades to brokerage firms that agree to promote their funds to investors.'
+2025-03-27T14:53:57,134 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - This the output size from the Seq classification model torch.Size([1, 2])
+2025-03-27T14:53:57,134 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - This the output from the Seq classification model SequenceClassifierOutput(loss=None, logits=tensor([[ 0.1768, -0.5023]]), hidden_states=None, attentions=None)
+2025-03-27T14:53:57,134 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Generated text ['Not Accepted']
+2025-03-27T14:54:11,427 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Backend received inference at: 1743101651
+2025-03-27T14:54:11,428 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Invoking custom service failed.
+2025-03-27T14:54:11,428 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-03-27T14:54:11,428 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/ts/service.py", line 135, in predict
+2025-03-27T14:54:11,428 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     ret = self._entry_point(input_batch, self.context)
+2025-03-27T14:54:11,428 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/ts/torch_handler/base_handler.py", line 455, in handle
+2025-03-27T14:54:11,428 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     data_preprocess = self.preprocess(data)
+2025-03-27T14:54:11,429 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/tmp/models/7fc44c8d91f54ffe8754d8e6c14fe2a5/Transformer_handler_generalized.py", line 176, in preprocess
+2025-03-27T14:54:11,429 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     input_text_target = ast.literal_eval(input_text)
+2025-03-27T14:54:11,429 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/ast.py", line 64, in literal_eval
+2025-03-27T14:54:11,429 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     node_or_string = parse(node_or_string.lstrip(" \t"), mode='eval')
+2025-03-27T14:54:11,429 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "/home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/ast.py", line 50, in parse
+2025-03-27T14:54:11,429 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     return compile(source, filename, mode, flags,
+2025-03-27T14:54:11,429 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -   File "<unknown>", line 1
+2025-03-27T14:54:11,429 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -     Distance learning has become a norm so far for schooling.
+2025-03-27T14:54:11,429 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG -              ^^^^^^^^
+2025-03-27T14:54:11,429 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - SyntaxError: invalid syntax
+2025-03-27T14:54:36,178 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Backend received inference at: 1743101676
+2025-03-27T14:54:36,178 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Received text: 'The Securities and Exchange Commission is expected to vote Wednesday to prohibit mutual fund companies from funneling stock trades to brokerage firms that agree to promote their funds to investors.'
+2025-03-27T14:54:36,264 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - This the output size from the Seq classification model torch.Size([1, 2])
+2025-03-27T14:54:36,264 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - This the output from the Seq classification model SequenceClassifierOutput(loss=None, logits=tensor([[ 0.1768, -0.5023]]), hidden_states=None, attentions=None)
+2025-03-27T14:54:36,265 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Generated text ['Not Accepted']
+2025-03-27T16:03:51,461 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=178354
+2025-03-27T16:03:51,462 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-03-27T16:03:51,467 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Successfully loaded /home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2025-03-27T16:03:51,467 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - [PID]178354
+2025-03-27T16:03:51,467 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Torch worker started.
+2025-03-27T16:03:51,467 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Python runtime: 3.10.16
+2025-03-27T16:03:51,474 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-03-27T16:03:51,497 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - model_name: my_tc, batchSize: 1
+2025-03-27T16:03:52,702 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-03-27T16:03:52,714 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - ONNX enabled
+2025-03-27T16:03:52,715 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-03-27T16:03:52,715 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Transformers version 4.50.2
+2025-03-27T16:03:53,305 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Transformer model from path /tmp/models/1fcf11c978d5420bbc00f52820d11b45 loaded successfully
+2025-03-27T16:10:08,265 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=179417
+2025-03-27T16:10:08,265 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-03-27T16:10:08,270 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Successfully loaded /home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2025-03-27T16:10:08,270 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - [PID]179417
+2025-03-27T16:10:08,270 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Torch worker started.
+2025-03-27T16:10:08,270 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Python runtime: 3.10.16
+2025-03-27T16:10:08,277 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-03-27T16:10:08,299 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - model_name: my_tc, batchSize: 1
+2025-03-27T16:10:09,559 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-03-27T16:10:09,572 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - ONNX enabled
+2025-03-27T16:10:09,572 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-03-27T16:10:09,572 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Transformers version 4.50.2
+2025-03-27T16:10:10,187 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Transformer model from path /tmp/models/710557f20b944cd49851b6b26c15d309 loaded successfully
+2025-03-27T16:13:00,906 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=180780
+2025-03-27T16:13:00,907 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-03-27T16:13:00,912 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Successfully loaded /home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2025-03-27T16:13:00,913 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - [PID]180780
+2025-03-27T16:13:00,913 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Torch worker started.
+2025-03-27T16:13:00,913 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Python runtime: 3.10.16
+2025-03-27T16:13:00,921 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-03-27T16:13:00,942 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - model_name: my_tc, batchSize: 1
+2025-03-27T16:13:02,169 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-03-27T16:13:02,181 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - ONNX enabled
+2025-03-27T16:13:02,182 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-03-27T16:13:02,182 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Transformers version 4.50.2
+2025-03-27T16:13:02,773 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Transformer model from path /tmp/models/b71f61c2165549a5922fda7bd79afa22 loaded successfully
+2025-03-27T16:22:16,058 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Backend received inference at: 1743106936
+2025-03-27T16:22:16,058 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Received text: 'Bloomberg has decided to publish a new report on the global economy.'
+2025-03-27T16:22:16,058 [WARN ] W-9000-my_tc_1.0-stderr MODEL_LOG - Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+2025-03-27T16:22:16,058 [WARN ] W-9000-my_tc_1.0-stderr MODEL_LOG - /home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2700: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+2025-03-27T16:22:16,058 [WARN ] W-9000-my_tc_1.0-stderr MODEL_LOG -   warnings.warn(
+2025-03-27T16:22:16,106 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - This the output size from the Seq classification model torch.Size([1, 2])
+2025-03-27T16:22:16,107 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - This the output from the Seq classification model SequenceClassifierOutput(loss=None, logits=tensor([[-1.6808,  1.6621]]), hidden_states=None, attentions=None)
+2025-03-27T16:22:16,107 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Generated text ['Positive']
+2025-03-27T16:23:15,778 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Backend received inference at: 1743106995
+2025-03-27T16:23:15,778 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Received text: 'Apple Launches Graphics Software, Video Bundle, LOS ANGELES (Reuters) - Apple Computer Inc.<AAPL.O> on Tuesday began shipping a new program designed to let users create real-time motion graphics and unveiled a discount video-editing software bundle featuring its flagship Final Cut Pro software.'
+2025-03-27T16:23:15,825 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - This the output size from the Seq classification model torch.Size([1, 2])
+2025-03-27T16:23:15,825 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - This the output from the Seq classification model SequenceClassifierOutput(loss=None, logits=tensor([[ 1.1008, -0.9515]]), hidden_states=None, attentions=None)
+2025-03-27T16:23:15,825 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Generated text ['Negative']
+2025-03-27T16:23:40,369 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Backend received inference at: 1743107020
+2025-03-27T16:23:40,370 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Received text: 'The weather today is sunny with a chance of rain in the evening.'
+2025-03-27T16:23:40,416 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - This the output size from the Seq classification model torch.Size([1, 2])
+2025-03-27T16:23:40,416 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - This the output from the Seq classification model SequenceClassifierOutput(loss=None, logits=tensor([[-3.6482,  3.8661]]), hidden_states=None, attentions=None)
+2025-03-27T16:23:40,416 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Generated text ['Positive']
+2025-03-27T16:24:01,813 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Backend received inference at: 1743107041
+2025-03-27T16:24:01,813 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Received text: 'The new smartphone model has received excellent reviews for its camera quality.'
+2025-03-27T16:24:01,859 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - This the output size from the Seq classification model torch.Size([1, 2])
+2025-03-27T16:24:01,859 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - This the output from the Seq classification model SequenceClassifierOutput(loss=None, logits=tensor([[-3.9196,  4.1660]]), hidden_states=None, attentions=None)
+2025-03-27T16:24:01,859 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Generated text ['Positive']
+2025-03-27T16:24:26,785 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Backend received inference at: 1743107066
+2025-03-27T16:24:26,785 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Received text: 'The product broke after just one week of use, very disappointing.'
+2025-03-27T16:24:26,833 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - This the output size from the Seq classification model torch.Size([1, 2])
+2025-03-27T16:24:26,833 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - This the output from the Seq classification model SequenceClassifierOutput(loss=None, logits=tensor([[ 4.5546, -3.6016]]), hidden_states=None, attentions=None)
+2025-03-27T16:24:26,833 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Generated text ['Negative']
+2025-03-27T17:26:56,689 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=195126
+2025-03-27T17:26:56,699 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-03-27T17:26:56,699 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Successfully loaded /home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2025-03-27T17:26:56,699 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - [PID]195126
+2025-03-27T17:26:56,699 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Torch worker started.
+2025-03-27T17:26:56,699 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Python runtime: 3.10.16
+2025-03-27T17:26:56,707 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-03-27T17:26:56,729 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - model_name: my_tc, batchSize: 1
+2025-03-27T17:26:57,969 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-03-27T17:26:57,981 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - ONNX enabled
+2025-03-27T17:26:57,982 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-03-27T17:26:57,982 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Transformers version 4.50.2
+2025-03-27T17:26:58,530 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Transformer model from path /tmp/models/1ab0811bccf64b0b98cf236227fcccc7 loaded successfully
+2025-03-27T17:27:37,378 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Backend received inference at: 1743110857
+2025-03-27T17:27:37,378 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Received text: 'Apple Launches Graphics Software, Video Bundle, LOS ANGELES (Reuters) - Apple Computer Inc.<AAPL.O> on Tuesday began shipping a new program designed to let users create real-time motion graphics and unveiled a discount video-editing software bundle featuring its flagship Final Cut Pro software.'
+2025-03-27T17:27:37,378 [WARN ] W-9000-my_tc_1.0-stderr MODEL_LOG - Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+2025-03-27T17:27:37,379 [WARN ] W-9000-my_tc_1.0-stderr MODEL_LOG - /home/equarmjn/.pyenv/versions/3.10.16/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2700: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+2025-03-27T17:27:37,379 [WARN ] W-9000-my_tc_1.0-stderr MODEL_LOG -   warnings.warn(
+2025-03-27T17:27:37,429 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - This the output size from the Seq classification model torch.Size([1, 2])
+2025-03-27T17:27:37,429 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - This the output from the Seq classification model SequenceClassifierOutput(loss=None, logits=tensor([[ 1.1008, -0.9515]]), hidden_states=None, attentions=None)
+2025-03-27T17:27:37,430 [INFO ] W-9000-my_tc_1.0-stdout MODEL_LOG - Generated text ['Negative']

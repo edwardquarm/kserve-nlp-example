@@ -1,0 +1,4 @@
+{
+  "text": "The weather today is sunny with a chance of rain in the evening.",
+  "target": 0
+}

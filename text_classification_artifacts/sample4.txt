@@ -1,0 +1,4 @@
+{
+  "text": "The service at the restaurant was terrible, and the food was cold.",
+  "target": 0
+}

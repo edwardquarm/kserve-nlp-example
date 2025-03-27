@@ -1,0 +1,4 @@
+{
+  "text": "The product broke after just one week of use, very disappointing.",
+  "target": 0
+}

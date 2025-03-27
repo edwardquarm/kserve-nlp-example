@@ -1,0 +1,4 @@
+{
+  "text": "The concert was amazing, and the band played all their hit songs.",
+  "target": 1
+}

@@ -1,0 +1,4 @@
+{
+  "text": "The flight was delayed for hours, and the staff was unhelpful.",
+  "target": 0
+}

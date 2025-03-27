@@ -1,0 +1,4 @@
+{
+  "text": "The new smartphone model has received excellent reviews for its camera quality.",
+  "target": 1
+}

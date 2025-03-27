@@ -1,0 +1,4 @@
+{
+  "text": "The new feature in the app is very useful and intuitive.",
+  "target": 1
+}

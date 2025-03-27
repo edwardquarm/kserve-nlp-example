@@ -1,0 +1,4 @@
+{
+  "text": "The customer support team was rude and unresponsive.",
+  "target": 0
+}
