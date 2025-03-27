@@ -78,10 +78,10 @@ Use the following command to create the `.mar` file:
 ```bash
 torch-model-archiver --model-name DISTLBERTClassification \
                      --version 1.0 \
-                     --serialized-file Huggingface_Transformers/Transformer_model/model.safetensors \
-                     --handler Huggingface_Transformers/Transformer_handler_generalized.py \
+                     --serialized-file Transformer_model/model.safetensors \
+                     --handler Transformer_handler_generalized.py \
                      --config-file model-config.yaml \
-                     --extra-files "Huggingface_Transformers/Transformer_model/config.json,Huggingface_Transformers/text_classification_artifacts/index_to_name.json"
+                     --extra-files "Transformer_model/config.json,text_classification_artifacts/index_to_name.json"
 ```
 
 ---

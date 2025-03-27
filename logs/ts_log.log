@@ -2499,3 +2499,17 @@ Model API enabled: true
 2025-03-27T17:39:55,986 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:43898.078125|#Level:Host|#hostname:equarmjn-thinkpadp1gen5.rht.csb,timestamp:1743111595
 2025-03-27T17:39:55,986 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:12949.484375|#Level:Host|#hostname:equarmjn-thinkpadp1gen5.rht.csb,timestamp:1743111595
 2025-03-27T17:39:55,986 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:31.4|#Level:Host|#hostname:equarmjn-thinkpadp1gen5.rht.csb,timestamp:1743111595
+2025-03-27T17:40:55,983 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:equarmjn-thinkpadp1gen5.rht.csb,timestamp:1743111655
+2025-03-27T17:40:55,983 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:216.96282577514648|#Level:Host|#hostname:equarmjn-thinkpadp1gen5.rht.csb,timestamp:1743111655
+2025-03-27T17:40:55,983 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:733.4186744689941|#Level:Host|#hostname:equarmjn-thinkpadp1gen5.rht.csb,timestamp:1743111655
+2025-03-27T17:40:55,983 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:77.2|#Level:Host|#hostname:equarmjn-thinkpadp1gen5.rht.csb,timestamp:1743111655
+2025-03-27T17:40:55,984 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:44086.6171875|#Level:Host|#hostname:equarmjn-thinkpadp1gen5.rht.csb,timestamp:1743111655
+2025-03-27T17:40:55,984 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:12813.8359375|#Level:Host|#hostname:equarmjn-thinkpadp1gen5.rht.csb,timestamp:1743111655
+2025-03-27T17:40:55,984 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:31.1|#Level:Host|#hostname:equarmjn-thinkpadp1gen5.rht.csb,timestamp:1743111655
+2025-03-27T17:41:55,979 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:equarmjn-thinkpadp1gen5.rht.csb,timestamp:1743111715
+2025-03-27T17:41:55,980 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:216.93768692016602|#Level:Host|#hostname:equarmjn-thinkpadp1gen5.rht.csb,timestamp:1743111715
+2025-03-27T17:41:55,980 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:733.4439353942871|#Level:Host|#hostname:equarmjn-thinkpadp1gen5.rht.csb,timestamp:1743111715
+2025-03-27T17:41:55,980 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:77.2|#Level:Host|#hostname:equarmjn-thinkpadp1gen5.rht.csb,timestamp:1743111715
+2025-03-27T17:41:55,980 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:44027.0234375|#Level:Host|#hostname:equarmjn-thinkpadp1gen5.rht.csb,timestamp:1743111715
+2025-03-27T17:41:55,980 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:12857.13671875|#Level:Host|#hostname:equarmjn-thinkpadp1gen5.rht.csb,timestamp:1743111715
+2025-03-27T17:41:55,980 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:31.2|#Level:Host|#hostname:equarmjn-thinkpadp1gen5.rht.csb,timestamp:1743111715
