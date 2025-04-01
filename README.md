@@ -1,4 +1,4 @@
-# KServe NLP Example
+# Serve Text Classification model using Torchserve on KServe
 
 This repository demonstrates how to deploy a pre-trained text classification model using [KServe](https://kserve.github.io/). The model and tokenizer are downloaded from Huggingface Transformers.
 
